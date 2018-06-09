@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Conditionals - Checking your balance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <script>
+        // change the values of `balance`, `checkBalance`, and `isActive` to test your code
+var balance = 65.00;
+var checkBalance = true;
+var isActive = false;
+
+// your code goes here
+if (checkBalance === false) {
+    document.write("Thank You. Have a nice day!");
+} else if (checkBalance === true && isActive === true && balance > 0) {
+    document.write("Your balance is $" + balance.toFixed(2) + ".");
+} else if (isActive === false) {
+    document.write("Your account is no longer active.");
+} else if (balance === 0) {
+    document.write("Your account is empty.");
+} 
+else {
+    document.write("Your balance is negative. Please contact bank.");
+}
+    </script>
+</body>
+</html>
